@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        setInterval(clock, 1000);
+        function clock(){
+            document.body.innerHTML="";
+        
+        var today = new Date();
+        var day = today.getDate();
+        var month = today.getMonth();
+        var year = today.getFullYear();
+        var hour = today.getHours();
+        var minutes = today.getMinutes();
+        var seconds = today.getSeconds();
+
+        document.write("Date: " +day+ "." +month+ "." +year+ "<br>");
+
+        document.write("Time: " +hour+ ":" +minutes+ ":" +seconds+ "<br>");
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

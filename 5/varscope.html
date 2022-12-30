@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <p>Outside myFunction(), name is not defined.</p>
+        <p id=myName01></p>
+        <p id=myName02></p>
+        <script>
+            var name = "Mr. Rogers";
+            function myFunction(){
+                document.getElementById("myName01").innerHTML = "Name is:" + name;
+            }
+
+            myFunction();
+            document.getElementById("myName02").innerHTML = "Name is:" + name;
+        </script>
+    </center>
+</body>
+</html>
